@@ -26,6 +26,7 @@ test {
     useTestNG()
     exclude '**/*PerformanceTest*'
     testLogging.showStandardStreams = true
+    ignoreFailures = true
     systemProperties = System.getProperties()
 }
 
@@ -33,6 +34,7 @@ task testPerformance(type: Test){
     useTestNG()
     include '**/*PerformanceTest*'
     testLogging.showStandardStreams = true
+    ignoreFailures = true
     systemProperties = System.getProperties()
 }
 
