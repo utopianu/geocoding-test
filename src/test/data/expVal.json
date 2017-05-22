@@ -1,0 +1,69 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "88",
+               "short_name" : "88",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Colin P Kelly Junior Street",
+               "short_name" : "Colin P Kelly Jr St",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "South of Market",
+               "short_name" : "South of Market",
+               "types" : [ "neighborhood", "political" ]
+            },
+            {
+               "long_name" : "San Francisco",
+               "short_name" : "SF",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "San Francisco County",
+               "short_name" : "San Francisco County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "California",
+               "short_name" : "CA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "94107",
+               "short_name" : "94107",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "88 Colin P Kelly Jr St, San Francisco, CA 94107, USA",
+         "geometry" : {
+            "location" : {
+               "lat" : 37.78226710000001,
+               "lng" : -122.3912479
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 37.78361608029151,
+                  "lng" : -122.3898989197085
+               },
+               "southwest" : {
+                  "lat" : 37.78091811970851,
+                  "lng" : -122.3925968802915
+               }
+            }
+         },
+         "place_id" : "ChIJU-lq_neAhYAR9LiPJPEp-Bw",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "status" : "OK"
+}

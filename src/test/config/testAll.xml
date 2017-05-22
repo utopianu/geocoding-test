@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Geocoding">
+  <test name="Geocoding Functionality Test">
+    <classes>
+      <class name="me.github.geocoding.api.test.ReverseGeocodingAPITest"/>
+      <class name="me.github.geocoding.api.test.GeocodingAPITest"/>
+      <class name="me.github.geocoding.api.test.GeocodingAPINegativeTest"/>
+    </classes>
+  </test>
+</suite>
