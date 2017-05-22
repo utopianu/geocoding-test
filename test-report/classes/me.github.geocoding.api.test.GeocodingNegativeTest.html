@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class me.github.geocoding.api.test.GeocodingNegativeTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class me.github.geocoding.api.test.GeocodingNegativeTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/me.github.geocoding.api.test.html">me.github.geocoding.api.test</a> &gt; GeocodingNegativeTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">20</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">5</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">3.151s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">75%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testBoundsInvalidFormat"></a>
+<h3 class="failures">testBoundsInvalidFormat</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Status code was incorrect. expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at me.github.geocoding.api.test.GeocodingNegativeTest.testBoundsInvalidFormat(GeocodingNegativeTest.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:129)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:88)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy3.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:147)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:129)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testComponentBoundsInvalidValue"></a>
+<h3 class="failures">testComponentBoundsInvalidValue</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Status code was incorrect. expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at me.github.geocoding.api.test.GeocodingNegativeTest.testComponentBoundsInvalidValue(GeocodingNegativeTest.java:137)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:129)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:88)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy3.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:147)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:129)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testComponentBoundsOutOfRange"></a>
+<h3 class="failures">testComponentBoundsOutOfRange</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Status code was incorrect. expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at me.github.geocoding.api.test.GeocodingNegativeTest.testComponentBoundsOutOfRange(GeocodingNegativeTest.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:129)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:88)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy3.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:147)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:129)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testComponentFilterInvalidFormat"></a>
+<h3 class="failures">testComponentFilterInvalidFormat</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Status code was incorrect. expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at me.github.geocoding.api.test.GeocodingNegativeTest.testComponentFilterInvalidFormat(GeocodingNegativeTest.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:129)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:88)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy3.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:147)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:129)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testInvalidComponentType"></a>
+<h3 class="failures">testInvalidComponentType</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Status code was incorrect. expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at me.github.geocoding.api.test.GeocodingNegativeTest.testInvalidComponentType(GeocodingNegativeTest.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:129)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:88)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy3.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:147)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:129)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAddressIntOnly</td>
+<td>0.427s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddressWithLatlng</td>
+<td>0.358s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testBoundsInvalidFormat</td>
+<td>0.091s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testComponentBoundsInvalidValue</td>
+<td>0.064s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testComponentBoundsOutOfRange</td>
+<td>0.070s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testComponentFilterInvalidFormat</td>
+<td>0.585s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testExceedsMaxUrlChar</td>
+<td>0.097s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testExclusiveComponentFilter</td>
+<td>0.421s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInvalidAddressInput</td>
+<td>0.314s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testInvalidComponentType</td>
+<td>0.074s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testInvalidLatlngType</td>
+<td>0.066s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInvalidRegion</td>
+<td>0.069s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInvalidURL</td>
+<td>0.055s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLatLngOutOfRange</td>
+<td>0.056s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMethodNotAllowed</td>
+<td>0.057s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMissingRequiredParam</td>
+<td>0.062s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNoURLEncoding</td>
+<td>0.081s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPlaceIdAccessDenied</td>
+<td>0.061s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequiredParamEmptyValue</td>
+<td>0.079s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUndifiedParam</td>
+<td>0.064s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Init Test: testAddressIntOnly...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?address=609386605771206
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testAddressWithLatlng...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?address=Colin%20P%20Kelly%20Junior%20Street&amp;latlng=12.321001%2C-112.3461
+Proxy:			&lt;none&gt;
+Request params:	latlng=12.321001,-112.3461
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testBoundsInvalidFormat...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?address=Colin%20P%20Kelly%20Junior%20Street&amp;bounds=34%2C-118%2834%2C-181%29
+Proxy:			&lt;none&gt;
+Request params:	bounds=34,-118(34,-181)
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testComponentBoundsInvalidValue...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?address=Colin%20P%20Kelly%20Junior%20Street&amp;bounds=invalidValue
+Proxy:			&lt;none&gt;
+Request params:	bounds=invalidValue
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testComponentBoundsOutOfRange...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?address=Colin%20P%20Kelly%20Junior%20Street&amp;bounds=34%2C-118%7C34%2C-181
+Proxy:			&lt;none&gt;
+Request params:	bounds=34,-118|34,-181
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testComponentFilterInvalidFormat...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?components=administrative_area%3ATX%28country%3ACN%29
+Proxy:			&lt;none&gt;
+Request params:	components=administrative_area:TX(country:CN)
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testExceedsMaxUrlChar...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?address=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
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testExclusiveComponentFilter...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?components=administrative_area%3ATX%7Ccountry%3ACN
+Proxy:			&lt;none&gt;
+Request params:	components=administrative_area:TX|country:CN
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testInvalidAddressInput...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?address=FssO0VHiqCjf436X7P5GCxIiDpJETKt2rWNWBLoJ
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testInvalidComponentType...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?components=invalidType%3ATX
+Proxy:			&lt;none&gt;
+Request params:	components=invalidType:TX
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testInvalidLatlngType...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?latlng=invalid
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testInvalidRegion...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?address=Colin%20P%20Kelly%20Junior%20Street&amp;region=invalid
+Proxy:			&lt;none&gt;
+Request params:	region=invalid
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testInvalidURL...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/v1/json?address=Colin%20P%20Kelly%20Junior%20Street
+Proxy:			&lt;none&gt;
+Request params:	address=Colin P Kelly Junior Street
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testLatLngOutOfRange...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?latlng=91%2C181
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testMethodNotAllowed...
+Request method:	DELETE
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?address=Colin%20P%20Kelly%20Junior%20Street
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testMissingRequiredParam...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?region=us
+Proxy:			&lt;none&gt;
+Request params:	region=us
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testNoURLEncoding...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?address=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
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testPlaceIdAccessDenied...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?place_id=ChIJU-lq_neAhYAR9LiPJPEp-Bw
+Proxy:			&lt;none&gt;
+Request params:	place_id=ChIJU-lq_neAhYAR9LiPJPEp-Bw
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testRequiredParamEmptyValue...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?address=%20
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Init Test: testUndifiedParam...
+Request method:	GET
+Request URI:	http://maps.googleapis.com:80/maps/api/geocode/json?address=Colin%20P%20Kelly%20Junior%20Street&amp;undefined=undefined
+Proxy:			&lt;none&gt;
+Request params:	undefined=undefined
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.4.1</a> at May 22, 2017 3:11:42 AM</p>
+</div>
+</div>
+</body>
+</html>
