@@ -213,6 +213,6 @@ public class GeocodingNegativeTest extends GeocodingAPITestBase {
 		checkSetupFailure(getMethodName());
 		String url = GeocodingUrl.GEOCODING_JSON.getUrl();
 		Response res = geocoding.getTestCall().accept(ContentType.XML).param("address", address).get(url);
-		Assert.assertEquals(res.getStatusCode(), 400, "Status code was incorrect.");
+		Assert.assertEquals(res.getStatusCode(), 406, "Status code was incorrect.");
 	}
 }
