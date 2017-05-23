@@ -184,10 +184,28 @@ public class GeocodingNegativeTest extends GeocodingAPITestBase {
 	}
 
 	@Test
-	public void testMethodNotAllowed() {
+	public void testMethodNotAllowedDelete() {
 		checkSetupFailure(getMethodName());
 		String url = GeocodingUrl.GEOCODING_DEFAULT.getUrl(address);
 		Response res = geocoding.getTestCall().delete(url);
+		Assert.assertEquals(res.getStatusCode(), 405, "Status code was incorrect.");
+	}
+
+	@Test
+	public void testMethodNotAllowedPut() {
+		checkSetupFailure(getMethodName());
+		String url = GeocodingUrl.GEOCODING_DEFAULT.getUrl(address);
+		Response res = geocoding.getTestCall().put(url);
+		Assert.assertEquals(res.getStatusCode(), 405, "Status code was incorrect.");
+	}
+
+	//POST allowed with paylod being ignored.
+	@Test
+	public void testMethodNotAllowedPost() {
+		checkSetupFailure(getMethodName());
+		String url = GeocodingUrl.GEOCODING_DEFAULT.getUrl(address);
+		String payload ="{\"address:\":\"testing json payload with post\"}";
+		Response res = geocoding.getTestCall().body(payload).post(url);
 		Assert.assertEquals(res.getStatusCode(), 405, "Status code was incorrect.");
 	}
 
@@ -209,10 +227,11 @@ public class GeocodingNegativeTest extends GeocodingAPITestBase {
 		Assert.assertEquals(res.getStatusCode(), 404, "Status code was incorrect.");
 	}
 
+	//Returning Server error with no proper error message
 	@Test
 	public void testNoURLEncoding() {
 		checkSetupFailure(getMethodName());
-		String address = CommonLib.randomString(8162);
+		String address = "@ n (enco) ";
 		String url = GeocodingUrl.GEOCODING_DEFAULT.getUrl(address);
 		Response res = geocoding.getTestCall().urlEncodingEnabled(false).get(url);
 		Assert.assertEquals(res.getStatusCode(), 400, "Status code was incorrect.");
