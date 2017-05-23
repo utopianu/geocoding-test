@@ -13,3 +13,7 @@ Using TestNG and RestAssured framework to test [Google Geocoding APIs](https://d
 ```java
 ./gradlew clean testPerformance
 ```
+* HTML Test report is available at
+```java
+build/reports/tests/**/index.html
+```
