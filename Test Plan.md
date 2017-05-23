@@ -29,7 +29,7 @@ The test plan will have following limitations due to limited time and resource. 
 8.	Special characters in URL – when properly encoded, verify special character in URL is properly handled.
 9.	Max chars in URL – API accepts URL with maximal 8192 characters.
 
-#### Negative Tests
+##### Negative Tests
 1.	Missing required parameters – no 'address', 'lat/lng', 'component filter' or 'place_id parameters, or empty value provided. Verify return 400 invalid request code.
 2.	Undefined parameters – parameter with random name from user, verify server will ignore it (further expanded in security test)
 3.	Invalid data type for parameter – String for 'lat/lng', 'bounds' parameter, verify 400 status code with invalid request
@@ -42,11 +42,11 @@ The test plan will have following limitations due to limited time and resource. 
 10.	Invalid URL – verify 404 status code
 11. Header override - specify accepted response as JSON only in request header, but use XML endpoint. The request should have error message with invalid response type.
 
-#### Security Test
+#### Security Tests
 1. No Authorization – Use 'place_id', 'location_type' parameters in request without API key, user_id or HTTPS, verify the request is denied.
 2. Method not Allowed – POST/PUT/DELETE request against the endpoint should return 405.
 
-#### Performance Test
+#### Performance Tests
 Current performance test suite is limited. Test 1000 GET requests with 100 threads, record the execution time.
 
 ### Next Steps
@@ -60,7 +60,7 @@ Current performance test suite is limited. Test 1000 GET requests with 100 threa
 8.	Expand on performance testing. Use load test tool to generate test plans, monitor network throughput, response time, CPU/memory usage, execution queue etc. Have performance benchmarking and identify the bottleneck.
 
 ### Deliverables
-1.	Java test functionality/performance automation suites using TestNG and RestAssured framework. 
+1.	Java functionality/performance automation suites using TestNG and RestAssured framework. 
 2.	Sample HTML test report
 3.	Gradle build and test tasks to execute test suites.
 4.	GitHub Repo with source code and instruction
