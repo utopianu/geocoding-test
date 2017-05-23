@@ -102,6 +102,7 @@ public class GeocodingNegativeTest extends GeocodingAPITestBase {
 		Assert.assertEquals(res.getStatusCode(), 200, "Status code was incorrect.");
 	}
 
+	//Comonets is the only parameter used, results doesn't related to TX in query
 	@Test
 	public void testInvalidComponentType() {
 		checkSetupFailure(getMethodName());
@@ -111,15 +112,19 @@ public class GeocodingNegativeTest extends GeocodingAPITestBase {
 		Assert.assertEquals(res.getStatusCode(), 400, "Status code was incorrect.");
 	}
 
+	//Comonets is the only parameter used, results doesn't related to TX in query
 	@Test
 	public void testComponentFilterInvalidFormat() {
 		checkSetupFailure(getMethodName());
 		String url = GeocodingUrl.GEOCODING_JSON.getUrl();
-		String component = "administrative_area:TX(country:CN)";
+		String component = "administrative_area:TX(country:US)";
 		Response res = geocoding.getTestCall().param("components", component).get(url);
 		Assert.assertEquals(res.getStatusCode(), 400, "Status code was incorrect.");
 	}
 
+
+	//boudns parameter ignored when format is not correct.
+	//TODO: decide if expected behavior
 	@Test
 	public void testBoundsInvalidFormat() {
 		checkSetupFailure(getMethodName());
@@ -129,6 +134,8 @@ public class GeocodingNegativeTest extends GeocodingAPITestBase {
 		Assert.assertEquals(res.getStatusCode(), 400, "Status code was incorrect.");
 	}
 
+	//boudns parameter ignored when value is not correct.
+	//TODO: decide if expected behavior
 	@Test
 	public void testComponentBoundsInvalidValue() {
 		checkSetupFailure(getMethodName());
@@ -138,6 +145,8 @@ public class GeocodingNegativeTest extends GeocodingAPITestBase {
 		Assert.assertEquals(res.getStatusCode(), 400, "Status code was incorrect.");
 	}
 
+	//boudns parameter ignored when value is not correct.
+	//TODO: decide if expected behavior
 	@Test
 	public void testComponentBoundsOutOfRange() {
 		checkSetupFailure(getMethodName());
@@ -209,6 +218,7 @@ public class GeocodingNegativeTest extends GeocodingAPITestBase {
 		Assert.assertEquals(res.getStatusCode(), 400, "Status code was incorrect.");
 	}
 
+	//Accept header ignored when different from API endpoint. JSON response returned
 	@Test
 	public void verifyAddressHeaderOverride() {
 		checkSetupFailure(getMethodName());
