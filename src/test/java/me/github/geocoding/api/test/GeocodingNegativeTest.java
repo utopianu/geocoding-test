@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.restassured.response.Response;
+import io.restassured.http.ContentType;
 import me.github.geocoding.api.util.CommonLib;
 import me.github.geocoding.api.util.GeocodingUrl;
 import me.github.geocoding.api.util.RestUtil;
